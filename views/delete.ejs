@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete User</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Delete User</h2>
+      <form action="/api/user/delete" method="post">
+        <div class="form-group">
+          <label for="id">User_id:</label>
+          <input
+            type="text"
+            id="id"
+            name="user_id"
+            placeholder="Enter user_id"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
